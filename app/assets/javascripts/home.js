@@ -10,7 +10,7 @@ $(function(){
 	/*$(".marker").click(function() {
 		togglePlaceDescHolder(this);
 	});*/
-	//setInputs();
+	setInputs();
 	//initNavActive();
 });
 

@@ -23,6 +23,8 @@ gem 'devise'
 gem 'rails-i18n'
 gem 'aws-sdk-s3', require: false
 gem 'lightgallery-rails'
+gem 'maskedinput-rails'
+gem 'jquery-ui-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

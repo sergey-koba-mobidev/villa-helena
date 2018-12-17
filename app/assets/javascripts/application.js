@@ -16,4 +16,6 @@
 //= require lightgallery
 //= require lg-thumbnail
 //= require lg-zoom
+//= require maskedinput
+//= require jquery-ui
 //= require home

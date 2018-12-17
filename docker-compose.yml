@@ -13,5 +13,10 @@ services:
     stdin_open: true
     tty: true
 
+  mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - "1080:1080"
+
 volumes:
   bundle-cache: null
