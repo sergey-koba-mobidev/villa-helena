@@ -1,0 +1,23 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row flex">
+            <div class="col-xs-3">
+                <a href="/" class="logo sprite sprite-logo-white uppercase flex">
+                    <span class="logo-text">хата</span>
+                    <span class="color-brand">хелена</span>
+                </a>
+            </div>
+            <div class="col-xs-offset-2 col-xs-7 contacts-footer">
+                <div class="row flex">
+                    <h5 class="col-xs-3">Контакты:</h5>
+                    <ul class="col-xs-9 flex">
+                        <li><a href="<?= DataManager::getContacts()['facebook'] ?>" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                        <li><%= Setting.phone %></li>
+                        <li><%= Setting.email %></li>
+                        <li>пос. Спасовка</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

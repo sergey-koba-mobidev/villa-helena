@@ -1,0 +1,19 @@
+<section id="interior" class="interior">
+    <!-- <div class="triangle-holder"></div> -->
+    <div class="interior-header">
+        <h3>Интерьер дома</h3>
+    </div>
+    <div id="gallery" class="container">
+      <% @gallery.each do |ph| %>
+      <a href="<%= url_for ph.image %>" title="<%= ph.title %>">
+        <img src="<%= url_for ph.image.variant(resize: "187x126") %>" />
+      </a>
+      <% end %>
+    </div>
+</section>
+<script>
+$(document).ready(function() {
+  $('#gallery').lightGallery({
+  }); 
+});
+</script>

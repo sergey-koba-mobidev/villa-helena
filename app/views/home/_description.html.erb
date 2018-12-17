@@ -1,0 +1,43 @@
+<section class="description-holder">
+    <div class="desc-bg">
+      <div class="desc-bg-img" style="background: url('<%= url_for @main_image.image.variant(resize: "800x600")%>') no-repeat 100% 0; background-size: cover;"></div>
+      <div class="desc-bg-green"></div>
+    </div>
+    <div class="container description">
+        <div class="desc-content">
+            <div class="row">
+                <div class="col-xs-7">
+                    <h1 class="text-center">Хата Хелена</h1>
+                    <p><%= Setting.short_description %></p>
+                    <a id="btn-to-booking" href="#booking" class="book uppercase">Бронировать</a>
+                </div>
+            </div>
+            <div class="photos-change flex">
+                <div class="photo-circle-holder">
+                    <svg class="photo-svg" width="500" height="300" viewBox="0 0 500 300">
+                        <defs>
+                            <pattern x="107" y="107" width="214" height="214" patternUnits="userSpaceOnUse" id="circle" viewBox="0 0 214 214">
+                                <% @gallery_circle.each do |ph| %>
+                                <image xmlns:xlink="<%= url_for ph.image.variant(resize: "214x214", crop: "214x214") %>" xlink:href="<%= url_for ph.image.variant(resize: "214x214", crop: "214x214") %>" preserveAspectRatio="none" width="214" height="214" ></image>
+                                <% end %>
+                            </pattern>
+                        </defs>
+                        <g transform="translate(125,175)">
+                            <circle r="125" fill="rgba(37,37,37,0.8)" stroke="" stroke-width="" />
+                            <circle r="115" fill="none" stroke="#388e3c" stroke-width="3" />
+                            <circle r="107" fill="url(#circle)" stroke="" stroke-width="0" />
+                        </g>
+                        <g transform="translate(183,-18)">
+                            <path fill="none" stroke="#388e3c" stroke-width="3" d="M56,206 C95,45 277,186 267,41 " />
+                            <circle r="10" cx="266" cy="40" fill="#388e3c" stroke="rgba(37,37,37,0.8)" stroke-width="8" />
+                        </g>
+                    </svg>
+                </div>
+                <h2 class="price-holder">
+                    <span class="show">от <span class="price"><%= Setting.price %></span> грн/день</span>
+                    <span class="show price-text">за весь дом</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="container mb-15 useful-info">
+    <h3>Полезные ссылки</h3>
+    <% @useful_links.each do |ul| %>
+            <div class="info flex">
+                <img src="<%= url_for ul.image.variant(resize: "91x91") %>" height="91" width="91" alt="<?= $link['title'] ?>">
+                <div class="info-text flex">
+                    <h4><%= ul.title %></h4>
+                    <a href="<%= ul.link %>" target="_blank"><%= ul.link %></a>
+                </div>
+            </div>
+    <% end %>
+</section>

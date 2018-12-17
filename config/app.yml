@@ -1,0 +1,15 @@
+# config/app.yml for rails-settings-cached
+defaults: &defaults
+  phone: "+38(067)5405077"
+  email: "hatahelena@gmail.com"
+  price: 480
+  short_description: "Комфортабельный сельский дом со всеми удобствами недалеко от курорта Товтры, известного своей целебной водой Збручанская Нафтуся."
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

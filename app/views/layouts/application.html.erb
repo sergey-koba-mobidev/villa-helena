@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Хата Хелена - аренда дома Товтры, Сатанов</title>
+    <meta name="description" content="Дешевая аренда комфортабельного дома Товтры, Сатанов. До пяти человек, интернет, душ, газовая плита, мангал, стиральная машина, парковка, отопленее, веранда." />
+    <meta name="viewport" content="width=device-width">
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700,400|Roboto+Condensed:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'layouts/analytics' %>
+    <%= render 'layouts/header' %>
+    <main>
+      <%= yield %>
+    </main>
+    <%= render 'layouts/footer' %>
+  </body>
+</html>

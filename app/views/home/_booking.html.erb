@@ -1,0 +1,43 @@
+<section id="booking" class="container mb-15 booking">
+    <h3>Бронирование / задать вопрос</h3>
+    <p>У Вас есть вопросы? Напишите нам или позвоните по телефону <%= Setting.phone %>. Укажите свое имя, контактные данные и мы свяжемся с вами. Указание предполагаемых дат заезда были бы желательны.</p>
+    <form id="booking-form">
+        <div class="form-group">
+            <label for="name">
+                <span class="sprite-holder"><i class="sprite sprite-form-user"></i></span>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ваше ФИО" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="phone">
+                <span class="sprite-holder"><i class="sprite sprite-form-phone"></i></span>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Контактный телефон" required>
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="email">
+                <span class="sprite-holder"><i class="sprite sprite-form-email"></i></span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            </label>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-6">
+                <label for="date1">
+                    <span class="sprite-holder"><i class="sprite sprite-form-date-in"></i></span>
+                    <input type="text" class="form-control" id="date1" name="date_from" placeholder="Дата заезда" required>
+                </label>
+            </div>
+            <div class="form-group col-xs-6">
+                <label for="date2">
+                    <span class="sprite-holder"><i class="sprite sprite-form-date-out"></i></span>
+                    <input type="text" class="form-control" id="date2" name="date_to" placeholder="Дата выезда" required>
+                </label>
+            </div>
+        </div>
+        <div class="comment-holder">
+            <span class="sprite-holder"><i class="sprite sprite-form-comment"></i></span>
+            <textarea class="form-control" rows="5" placeholder="Комментарий" name="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default center-block">Отправить</button>
+    </form>
+</section>
