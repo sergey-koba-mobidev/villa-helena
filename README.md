@@ -10,3 +10,5 @@ http://villa-helena.com.ua/
 
 ## TODO:
 - logos
+- backups
+- deploy
