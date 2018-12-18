@@ -7,3 +7,6 @@ http://villa-helena.com.ua/
 - `docker-compose run web rails db:migrate`
 - `dc run web rails db:seed`
 - `docker-compose up`
+
+## TODO:
+- logos
