@@ -75,6 +75,8 @@ ActiveRecord::Schema.define(version: 2018_12_17_080837) do
     t.boolean "main"
     t.boolean "circle"
     t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "settings", force: :cascade do |t|

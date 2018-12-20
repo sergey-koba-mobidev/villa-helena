@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   resources :bookings, only: [:create]
+
+  get '/api/backup', to: 'backups#create'
 end
