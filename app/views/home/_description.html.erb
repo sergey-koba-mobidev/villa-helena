@@ -18,7 +18,7 @@
                         <defs>
                             <pattern x="107" y="107" width="214" height="214" patternUnits="userSpaceOnUse" id="circle" viewBox="0 0 214 214">
                                 <% @gallery_circle.each do |ph| %>
-                                <image xmlns:xlink="<%= url_for ph.image.variant(resize: "214x214", crop: "214x214") %>" xlink:href="<%= url_for ph.image.variant(resize: "214x214", crop: "214x214") %>" preserveAspectRatio="none" width="214" height="214" ></image>
+                                <image xmlns:xlink="<%= url_for ph.image.variant(resize: "214x214", extent: "214x214", gravity: "center") %>" xlink:href="<%= url_for ph.image.variant(resize: "214x214") %>" preserveAspectRatio="xMidYMid slice" width="214" height="214" ></image>
                                 <% end %>
                             </pattern>
                         </defs>
