@@ -1,7 +1,7 @@
 FROM ruby:2.5.3-alpine as builder
 
 # Pg
-RUN apk --update --upgrade add sqlite-dev nodejs git build-base libffi-dev libgcc imagemagick xz-dev libc6-compat
+RUN apk --update --upgrade add postgresql-dev nodejs git build-base libffi-dev libgcc imagemagick xz-dev libc6-compat
 
 ENV RAILS_ENV production
 ENV APP_ROOT /app
@@ -18,7 +18,7 @@ RUN bundle exec rails assets:precompile
 FROM ruby:2.5.3-alpine
 
 #Pg
-RUN apk --update --upgrade add sqlite-dev imagemagick nodejs xz-dev && rm -rf /var/cache/apk/*
+RUN apk --update --upgrade add postgresql-dev imagemagick nodejs xz-dev && rm -rf /var/cache/apk/*
 
 ENV APP_ROOT /app
 RUN mkdir $APP_ROOT

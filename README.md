@@ -5,10 +5,5 @@ http://villa-helena.com.ua/
 - `cp .env.example .env`
 - `docker-compose build`
 - `docker-compose run web rails db:migrate`
-- `dc run web rails db:seed`
-- `docker-compose up`
-
-## TODO:
-- logos
-- backups
-- deploy
+- `docker-compose run web rails db:seed`
+- `docker-compose up -d`

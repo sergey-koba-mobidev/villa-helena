@@ -3,7 +3,7 @@ FROM ruby:2.5.3-alpine
 RUN mkdir -p /app
 WORKDIR /app
 
-RUN apk --update --upgrade add git sqlite-dev imagemagick build-base xz-dev libc6-compat \
+RUN apk --update --upgrade add git postgresql-dev imagemagick build-base xz-dev libc6-compat \
     nodejs \
     curl unzip \
     linux-headers \
