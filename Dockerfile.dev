@@ -12,7 +12,7 @@ RUN apk --update --upgrade add git postgresql-dev imagemagick build-base xz-dev 
 COPY Gemfile /app
 COPY Gemfile.lock /app
 
-RUN bundle install
+#RUN bundle install
 
 COPY . /app
 
